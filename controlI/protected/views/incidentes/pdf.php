@@ -75,7 +75,7 @@ tr:hover td { background: #d0dafd; color: #339; }
  $html3='</table>';
 
  $mpdf = Yii::app()->ePdf->mpdf();
- $mpdf->WriteHTML($html.$html2.$html3);
- //$mpdf->Output('Reporte_Incidnetes.pdf','D');
+ //$mpdf->WriteHTML($html.$html2.$html3);
+ $mpdf->Output('Reporte_Incidnetes.pdf','D');
  $mpdf->Output();
  exit; ?>
