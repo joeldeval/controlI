@@ -71,7 +71,9 @@ class IncidentesController extends Controller
 			$model->attributes=$_POST['Incidentes'];
 			$model->InicioFechaHora = new CDbExpression('NOW()');
 			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
-			
+			$model->Estatus = 'Nuevo';
+
+
 			if ($model->validate()) {
 				
 				if($model->Inmueble != ''){

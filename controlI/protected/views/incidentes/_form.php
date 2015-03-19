@@ -33,12 +33,13 @@
 		                                                       array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'Categoria'); ?>
   </div>
-
-	<div class="form-control">
+  <!--
+	<div class="form-control ">
 		<?php echo $form->labelEx($model,'Estatus'); ?>
-		<?php echo $form->textField($model,'Estatus',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'Estatus',array('size'=>45,'maxlength'=>45,'placeholder'=>'Nuevo',)); ?>
 		<?php echo $form->error($model,'Estatus'); ?>
 	</div>
+-->
 
 	<div class="form-control">
 		<?php echo $form->labelEx($model,'Laboratorio'); ?>
@@ -54,10 +55,18 @@
 
 	<div class="form-control">
 		<?php echo $form->labelEx($model,'Urgencia'); ?>
-		<?php echo $form->textField($model,'Urgencia',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->dropDownList($model,'Urgencia',array('Urgente'=>'Urgente',
+															  'MuyAlto'=>'Muy Alto',
+															  'Alto'=>'Alto',
+															  'Normal'=>'Normal',
+															  'Bajo'=>'Bajo',
+
+																  ), 
+		                                                       array('options' => array('Urgente'=>array('selected'=>true))), 
+		                                                       array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'Urgencia'); ?>
 	</div>
-
+	
 	<div class="form-control">
 		<?php echo $form->labelEx($model,'Equipo'); ?>
 		<?php echo $form->textField($model,'Equipo',array('size'=>45,'maxlength'=>45)); ?>

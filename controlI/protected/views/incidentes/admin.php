@@ -48,12 +48,11 @@ $('.search-form form').submit(function(){
 		'Estatus',
 		'Laboratorio',
 		'Inmueble',
-		/*
 		'Asignado',
 		'Urgencia',
 		'SolucionFechaHora',
 		'ModificacionFechaHora',
-		'Equipo',*/
+		'Equipo',
 		
 		array(
 			'class'=>'CButtonColumn',
