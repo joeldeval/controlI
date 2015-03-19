@@ -354,3 +354,21 @@ Stack trace:
 REQUEST_URI=/controlI/controlI/incidentes/create
 HTTP_REFERER=http://localhost/controlI/
 ---
+2015/03/18 22:45:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\controlI\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/incidentes/delete/3.html
+HTTP_REFERER=http://localhost/controlI/controlI/incidentes/admin
+---
