@@ -42,9 +42,26 @@
 		<?php echo $form->error($model,'Asignado'); ?>
 	</div>
 
+	<div class="form-control">
+		<?php echo $form->labelEx($model,'SolucionFechaHora'); ?>
+		<?php echo $form->textField($model,'SolucionFechaHora',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'SolucionFechaHora'); ?>
+	</div>
 
-	
 
+	<div class="form-control">
+		<?php echo $form->labelEx($model,'ModificacionFechaHora'); ?>
+		<?php echo $form->textField($model,'ModificacionFechaHora',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'ModificacionFechaHora'); ?>
+	</div>
+
+<!--
+	<div class="form-control">
+		<?php echo $form->labelEx($model,'Equipo'); ?>
+		<?php echo $form->textField($model,'Equipo',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'Equipo'); ?>
+	</div>
+-->
 
 <!--
 	<div class="form-control">

@@ -1542,3 +1542,69 @@ REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/sdasdasdasda.png
 HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/1
 >>>>>>> 96e378bacb2b94091fc3410fd756432f8b8675ee
 ---
+2015/03/19 16:36:11 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\xampp\htdocs\controlI\controlI\assets" es inválido. Asegúrese que el directorio exista y tenga permisos de escritura por el proceso que corre el servidor Web.' in C:\xampp\htdocs\controlI\yii\framework\web\CAssetManager.php:138
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\controlI\yii\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\controlI\controlI\protected\extensions\bootstrap\components\Bootstrap.php(306): CAssetManager->publish('C:\xampp\htdocs...', true, -1, false)
+#3 C:\xampp\htdocs\controlI\controlI\protected\extensions\bootstrap\components\Bootstrap.php(50): Bootstrap->getAssetsUrl()
+#4 C:\xampp\htdocs\controlI\controlI\protected\extensions\bootstrap\components\Bootstrap.php(81): Bootstrap->registerCoreCss()
+#5 C:\xampp\htdocs\controlI\controlI\protected\views\layouts\main.php(10): Bootstrap->registerAllCss()
+#6 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\controlI\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\controlI\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('  <link rel="st...')
+#10 C:\xampp\htdocs\controlI\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('  <link rel="st...')
+#11 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(214): COutputProcessor->run()
+#12 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#13 C:\xampp\htdocs\controlI\controlI\protected\views\layouts\column2.php(29): CBaseController->endContent()
+#14 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#15 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#17 C:\xampp\htdocs\controlI\controlI\protected\controllers\IncidentesController.php(151): CController->render('update', Array)
+#18 [internal function]: IncidentesController->actionUpdate('4')
+#19 C:\xampp\htdocs\controlI\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(IncidentesController), Array)
+#20 C:\xampp\htdocs\controlI\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IncidentesController), Object(ReflectionMethod), Array)
+#21 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#30 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/upda...')
+#31 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#32 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/update/4
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/update/4
+---
+2015/03/19 16:39:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\controlI\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/upda...')
+#10 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/update/
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 16:39:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "imagenes/fotos_reportes/ihjb.png"' in C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('imagenes/fotos_...')
+#1 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/ihjb.png
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/2
+---
