@@ -70,8 +70,8 @@ class IncidentesController extends Controller
 		if(isset($_POST['Incidentes']))
 		{
 			$model->attributes=$_POST['Incidentes'];
+			$model->InicioFechaHora = 'NOW()';
 			if($model->save()){
-				Yii::app ()->user->setFlash ( 'error', 'Pronto Resolveremos tu problema' );
 				$this->redirect(array('create','id'=>$model->idIncidente));
 			}
 		}

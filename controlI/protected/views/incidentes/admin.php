@@ -4,12 +4,12 @@
 
 $this->breadcrumbs=array(
 	'Incidentes'=>array('index'),
-	'Manage',
+	'Administrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Incidentes', 'url'=>array('index')),
-	array('label'=>'Create Incidentes', 'url'=>array('create')),
+	array('label'=>'Listar Incidentes', 'url'=>array('index')),
+	array('label'=>'Crear Incidentes', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,12 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Incidentes</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<h1>Administrar Incidentes</h1>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -39,9 +34,10 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'model'=>$model,
 )); ?>
 </div><!-- search-form -->
-
+<div class="table-responsive">
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'incidentes-grid',
+	'itemsCssClass'=>'table table-striped table-hover table-condensed',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
@@ -62,5 +58,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		array(
 			'class'=>'CButtonColumn',
 		),
+		//'htmlOptions'=>array('class'=>'table'),
 	),
 )); ?>
