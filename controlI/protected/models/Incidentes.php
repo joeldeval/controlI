@@ -110,6 +110,12 @@ class Incidentes extends CActiveRecord
 		$criteria->compare('Equipo',$this->Equipo,true);
 		$criteria->compare('Inmueble',$this->Inmueble,true);
 
+		$_SESSION['datos_filtrados'] = new CActiveDataProvider($this, array(
+ 		'criteria'=>$criteria,
+		
+		 'pagination'=>false,
+ 			));
+			
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

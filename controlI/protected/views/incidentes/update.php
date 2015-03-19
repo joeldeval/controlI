@@ -13,6 +13,7 @@ $this->menu=array(
 	array('label'=>'Create Incidentes', 'url'=>array('create')),
 	array('label'=>'View Incidentes', 'url'=>array('view', 'id'=>$model->idIncidente)),
 	array('label'=>'Manage Incidentes', 'url'=>array('admin')),
+	array('label'=>'Reporte de Incidentes', 'url'=>array('pdf')),
 );
 ?>
 

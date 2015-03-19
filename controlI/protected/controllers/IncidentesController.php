@@ -28,15 +28,15 @@ class IncidentesController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','pdf'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create'),
+				'actions'=>array('create','pdf'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete', 'update'),
+				'actions'=>array('admin','delete', 'update','pdf'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -175,6 +175,12 @@ class IncidentesController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+
+
+	public function actionPdf()
+ 	{
+ 		$this->render('pdf');
+ 	}
 
 	/**
 	 * Manages all models.
