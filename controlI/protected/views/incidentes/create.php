@@ -2,10 +2,7 @@
 /* @var $this IncidentesController */
 /* @var $model Incidentes */
 
-$this->breadcrumbs=array(
-	'Incidentes'=>array('index'),
-	'Create',
-);
+
 
 ?>
 

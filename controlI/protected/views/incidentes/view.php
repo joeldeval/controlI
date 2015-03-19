@@ -32,7 +32,6 @@ $this->menu=array(
 		'SolucionFechaHora',
 		'ModificacionFechaHora',
 		'Equipo',
-		'Inmueble',
 		array(
 			'label'=>'Imagen',
 			'type'=>'raw',

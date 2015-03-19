@@ -2,14 +2,12 @@
 /* @var $this IncidentesController */
 /* @var $model Incidentes */
 
-$this->breadcrumbs=array(
-	'Incidentes'=>array('index'),
-	'Administrar',
-);
-
 $this->menu=array(
 	array('label'=>'Listar Incidentes', 'url'=>array('index')),
 	array('label'=>'Crear Incidentes', 'url'=>array('create')),
+	array('label'=>'Actualizar Incidentes', 'url'=>array('update', 'id'=>$model->idIncidente)),
+	array('label'=>'Eliminar Incidentes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idIncidente),'confirm'=>'Are you sure you want to delete this item?')),
+
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -28,7 +26,7 @@ $('.search-form form').submit(function(){
 
 <h1>Administrar Incidentes</h1>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,

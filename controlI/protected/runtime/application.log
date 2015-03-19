@@ -1422,3 +1422,36 @@ Stack trace:
 REQUEST_URI=/controlI/controlI/index.php/incidentes/Inmueble
 HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/13
 ---
+2015/03/19 15:37:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "admin"' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/admin
+---
+2015/03/19 16:14:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\proyectoGit\controlI\controlI\protected\controllers\IncidentesController.php:203
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\controlI\protected\controllers\IncidentesController.php(159): IncidentesController->loadModel('6')
+#1 [internal function]: IncidentesController->actionDelete('6')
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(IncidentesController), Array)
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(IncidentesController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1116): CFilterChain->run()
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#16 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#17 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/incidentes/delete/6?ajax=incidentes-grid
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
+---
