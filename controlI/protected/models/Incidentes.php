@@ -64,18 +64,18 @@ class Incidentes extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idIncidente' => 'Id Incidente',
+			'idIncidente' => 'ID',
 			'Descripcion' => 'Descripcion',
-			'InicioFechaHora' => 'Inicio Fecha Hora',
+			'InicioFechaHora' => 'Inicio',
 			'Categoria' => 'Categoria',
 			'Estatus' => 'Estatus',
 			'Laboratorio' => 'Laboratorio',
 			'Asignado' => 'Asignado',
 			'Urgencia' => 'Urgencia',
-			'SolucionFechaHora' => 'Solucion Fecha Hora',
-			'ModificacionFechaHora' => 'Modificacion Fecha Hora',
+			'SolucionFechaHora' => 'Solucion',
+			'ModificacionFechaHora' => 'Modificacion',
 			'Equipo' => 'Equipo',
-			'Inmueble' => 'Inmueble',
+			'Inmueble' => 'Foto',
 		);
 	}
 
