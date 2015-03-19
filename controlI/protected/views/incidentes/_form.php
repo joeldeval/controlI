@@ -24,10 +24,7 @@
 		<?php echo $form->error($model,'Descripcion'); ?>
 
   </div>
-  <div class="form-group">
-		<?php echo $form->textField($model,'InicioFechaHora'); ?>
-		<?php echo $form->error($model,'InicioFechaHora'); ?>
-  </div>
+ 
   <div class="form-group">
   	<?php echo $form->labelEx($model,'Categoria'); ?>
 		<?php echo $form->textField($model,'Categoria',array('size'=>45,'maxlength'=>45)); ?>

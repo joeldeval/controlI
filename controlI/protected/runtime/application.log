@@ -245,3 +245,274 @@ Stack trace:
 REQUEST_URI=/controlI/incidentes/%3Cbr%20/%3E%3Cfont%20size='1'%3E%3Ctable%20class='xdebug-error%20xe-notice'%20dir='ltr'%20border='1'%20cellspacing='0'%20cellpadding='1'%3E%3Ctr%3E%3Cth%20align='left'%20bgcolor='
 HTTP_REFERER=http://localhost/controlI/incidentes/create
 ---
+2015/03/19 09:37:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/2
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:37:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/1
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:37:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/1
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:38:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/2
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:39:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/2
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:41:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "admin"' in /var/www/controlI/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controlI/controlI/index.php/admin
+---
+2015/03/19 09:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "admin"' in /var/www/controlI/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controlI/controlI/index.php/admin
+---
+2015/03/19 09:42:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "admin"' in /var/www/controlI/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#1 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controlI/controlI/index.php/admin
+---
+2015/03/19 09:43:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/3
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:44:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/3
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:45:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/3
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:45:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/3
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:46:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/3
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 09:46:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/controlI/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#10 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/delete/2
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/19 10:58:40 [error] [exception.CException] exception 'CException' with message 'La propiedad "Incidentes"."InicioFechHora" no se encuentra definida.' in /var/www/controlI/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/controlI/yii/framework/db/ar/CActiveRecord.php(161): CComponent->__set('InicioFechHora', Object(CDbExpression))
+#1 /var/www/controlI/controlI/protected/controllers/IncidentesController.php(73): CActiveRecord->__set('InicioFechHora', Object(CDbExpression))
+#2 /var/www/controlI/yii/framework/web/actions/CInlineAction.php(49): IncidentesController->actionCreate()
+#3 /var/www/controlI/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/crea...')
+#13 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/create
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/create
+---
+2015/03/19 11:06:44 [error] [exception.CException] exception 'CException' with message 'La propiedad "CListView"."class" no se encuentra definida.' in /var/www/controlI/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/controlI/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('class', 'col-sm-3 col-md...')
+#1 /var/www/controlI/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(IncidentesController), 'zii.widgets.CLi...', Array)
+#2 /var/www/controlI/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /var/www/controlI/controlI/protected/views/incidentes/index.php(21): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /var/www/controlI/yii/framework/web/CBaseController.php(126): require('/var/www/contro...')
+#5 /var/www/controlI/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/contro...', Array, true)
+#6 /var/www/controlI/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/contro...', Array, true)
+#7 /var/www/controlI/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/controlI/controlI/protected/controllers/IncidentesController.php(130): CController->render('index', Array)
+#9 /var/www/controlI/yii/framework/web/actions/CInlineAction.php(49): IncidentesController->actionIndex()
+#10 /var/www/controlI/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /var/www/controlI/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/controlI/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /var/www/controlI/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/controlI/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/controlI/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/controlI/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/controlI/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /var/www/controlI/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('incidentes/inde...')
+#20 /var/www/controlI/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#21 /var/www/controlI/controlI/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/index
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/admin
+---

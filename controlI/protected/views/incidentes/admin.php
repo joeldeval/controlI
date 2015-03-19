@@ -53,8 +53,8 @@ $('.search-form form').submit(function(){
 		'SolucionFechaHora',
 		'ModificacionFechaHora',
 		'Equipo',
-		'Inmueble',
-		*/
+		'Inmueble',*/
+		
 		array(
 			'class'=>'CButtonColumn',
 		),

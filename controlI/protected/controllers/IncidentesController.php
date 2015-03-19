@@ -70,7 +70,7 @@ class IncidentesController extends Controller
 		if(isset($_POST['Incidentes']))
 		{
 			$model->attributes=$_POST['Incidentes'];
-			$model->InicioFechaHora = 'NOW()';
+			$model->InicioFechaHora = new CDbExpression('NOW()');
 			if($model->save()){
 				$this->redirect(array('create','id'=>$model->idIncidente));
 			}
