@@ -63,19 +63,32 @@ class IncidentesController extends Controller
 	public function actionCreate()
 	{
 		$model=new Incidentes;
+		
+		
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Incidentes']))
+			if(isset($_POST['Incidentes']))
 		{
 			$model->attributes=$_POST['Incidentes'];
 			$model->InicioFechaHora = new CDbExpression('NOW()');
-			if($model->save()){
-				$this->redirect(array('create','id'=>$model->idIncidente));
-			}
-		}
+			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
+			
+			if ($model->validate()) {
+				
+				if($model->Inmueble != ''){
+					//mkdir(__DIR__ .'SIHCi/sihci/users/'.$model->id_user.'/', 0777);
+					$model->Inmueble->saveAs(YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->Categoria.'.png');
+					$model->Inmueble ='/controlI/controlI/imagenes/fotos_reportes/'.$model->Categoria.'.png';
+					if($model->save()){
 
+			   			$this->redirect(array('create','id'=>$model->idIncidente));
+
+			   		}
+
+				}
+
+			}//end if validate
+		}
+	
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -92,13 +105,44 @@ class IncidentesController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['Incidentes']))
+		{
+			$model->attributes=$_POST['Incidentes'];
+			$model->ModificacionFechaHora = new CDbExpression('NOW()');
+			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
+			if ($model->validate()) {
+				//if (!file_exists('/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/')) {
+   					//	 mkdir('/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/', 0777);
+
+   					//	$model->photo_url->saveAs(YiiBase::getPathOfAlias("webroot").'/users/'.$model->id_user.'/cve-hc/perfil.png');
+					// 	$model->photo_url ='/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/perfil.png';
+					// }
+				if($model->Inmueble != ''){
+					$model->Inmueble->saveAs(YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->InicioFechaHora.'.png');
+				//		$model->photo_url ='/SIHCi/sihci/users/'.$model->id_user.'.png';
+					if($model->save()){
+						$this->redirect(array('view','id'=>$model->idIncidente));
+			   		}
+						
+					
+				}else{
+					$model->Inmueble = YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->InicioFechaHora.'.png';
+					if($model->save()){
+						$this->redirect(array('view','id'=>$model->idIncidente));
+			   		}
+				}
+				
+			}
+			
+		}
+
+
+		/*if(isset($_POST['Incidentes']))
 		{
 			$model->attributes=$_POST['Incidentes'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idIncidente));
-		}
+		}*/
 
 		$this->render('update',array(
 			'model'=>$model,

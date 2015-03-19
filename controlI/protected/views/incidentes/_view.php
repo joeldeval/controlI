@@ -32,7 +32,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Asignado')); ?>:</b>
 	<?php echo CHtml::encode($data->Asignado); ?>
 	<br />
-
+	
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Urgencia')); ?>:</b>
 	<?php echo CHtml::encode($data->Urgencia); ?>

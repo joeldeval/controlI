@@ -47,13 +47,13 @@ $('.search-form form').submit(function(){
 		'Categoria',
 		'Estatus',
 		'Laboratorio',
+		'Inmueble',
 		/*
 		'Asignado',
 		'Urgencia',
 		'SolucionFechaHora',
 		'ModificacionFechaHora',
-		'Equipo',
-		'Inmueble',*/
+		'Equipo',*/
 		
 		array(
 			'class'=>'CButtonColumn',

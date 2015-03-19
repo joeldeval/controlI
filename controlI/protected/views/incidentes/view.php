@@ -33,5 +33,11 @@ $this->menu=array(
 		'ModificacionFechaHora',
 		'Equipo',
 		'Inmueble',
+		array(
+			'label'=>'Imagen',
+			'type'=>'raw',
+			'value'=>CHtml::image(Yii::app()->baseUrl.'/imagenes/fotos_reportes/'.$model->Categoria.'.png'),
+		
+			),
 	),
 )); ?>

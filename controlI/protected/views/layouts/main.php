@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="language" content="en">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/signin.css" />
-  
+  <link href=<?php echo Yii::app()->request->baseUrl."/imagenes/favicon.png" ?> type="image/x-icon" rel="shortcut icon" />
 	<?php 
 	echo Yii::app()->bootstrap->registerAllCss(); 
 	echo Yii::app()->bootstrap->registerCoreScripts(); 
@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
 	<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">

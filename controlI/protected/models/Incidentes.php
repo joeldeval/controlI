@@ -35,10 +35,14 @@ class Incidentes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Descripcion, InicioFechaHora, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo, Inmueble', 'required'),
-			array('Descripcion, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo, Inmueble', 'length', 'max'=>45),
+			array('Descripcion, InicioFechaHora, Categoria, Estatus, Laboratorio,  Urgencia, Equipo', 'required'),
+			array('Descripcion, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
+			array('Inmueble','file', 'allowEmpty'=>false,
+			                  'types'=>'png, jpg, jpeg, gif',
+			                  'maxSize'=>array(1024 * 2000),
+			                  'message'=>'Debes Seleccionar Foto'),
 			array('idIncidente, Descripcion, InicioFechaHora, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo, Inmueble', 'safe', 'on'=>'search'),
 		);
 	}
