@@ -12,8 +12,10 @@ $this->menu=array(
 	array('label'=>'Create Incidentes', 'url'=>array('create')),
 	array('label'=>'Update Incidentes', 'url'=>array('update', 'id'=>$model->idIncidente)),
 	array('label'=>'Delete Incidentes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idIncidente),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Cerrar Incidente', 'url'=>array('cerrar', 'id'=>$model->idIncidente)),
 	array('label'=>'Manage Incidentes', 'url'=>array('admin')),
 	array('label'=>'Reporte de Incidentes', 'url'=>array('pdf')),
+
 );
 ?>
 

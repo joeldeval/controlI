@@ -36,7 +36,7 @@ class IncidentesController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete', 'update','pdf'),
+				'actions'=>array('admin','delete', 'update','pdf','cerrar'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -56,6 +56,30 @@ class IncidentesController extends Controller
 		));
 	}
 
+
+
+public function actionCerrar($id)
+	{
+		$model=$this->loadModel($id);
+		$fecha=date('Y-m-d H:i:s');
+		
+		if(isset($_POST['Incidentes']))
+		{
+			$model->attributes=$_POST['Incidentes'];
+			$model->SolucionFechaHora = $fecha;
+			$model->Estatus = 'Cerrado';
+
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->idIncidente));
+		}
+
+
+		$this->render('cerrar',array(
+			'model'=>$model,
+		));
+
+	}
+
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -63,17 +87,19 @@ class IncidentesController extends Controller
 	public function actionCreate()
 	{
 		$model=new Incidentes;
-		
+		$fecha=date('Y-m-d h:m:s');
 		
 
 			if(isset($_POST['Incidentes']))
 		{
 			$model->attributes=$_POST['Incidentes'];
-			$model->InicioFechaHora = new CDbExpression('NOW()');
+			$model->InicioFechaHora = $fecha;
 			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
 			$model->Estatus = 'Nuevo';
 
 
+
+			
 			if ($model->validate()) {
 				
 				if($model->Inmueble != ''){
@@ -89,6 +115,7 @@ class IncidentesController extends Controller
 				}
 
 			}//end if validate
+			
 		}
 	
 		$this->render('create',array(
@@ -104,13 +131,13 @@ class IncidentesController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
+		$fecha=date('Y-m-d H:i:s');
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		if(isset($_POST['Incidentes']))
 		{
 			$model->attributes=$_POST['Incidentes'];
-			$model->ModificacionFechaHora = new CDbExpression('NOW()');
+			$model->ModificacionFechaHora = $fecha;
 			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
 			if ($model->validate()) {
 				//if (!file_exists('/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/')) {

@@ -1,5 +1,7 @@
 <?php
 
+$pdf = Yii::createComponent('application.vendors.mpdf.mpdf');
+
  $dataProvider=$_SESSION['datos_filtrados']->getData();
 
  $contador=count($dataProvider);
@@ -7,9 +9,14 @@
 $html2="";
  $html='
 
+<frameset cols="120,*">
+<frame name="sx" src="sx.htm">
+<frameset rows="100,*">
+<frame name="alto" src="top.htm"> 
+<frame name="central" src="central.htm">
+</frameset> 
 
-
-
+</frameset>
 <h2 align="center" >Control de Incidentes de laboratorios CUTonalá</h2>      
       	
  
@@ -17,13 +24,13 @@ $html2="";
  
  <h3 align="center"> REPORTE DE INCIDENTES</h3> 
 
- <h3> Total Resultados: '.$contador.' </h3> 
+ <pre><h3>		Total Resultados: '.$contador.' </h3></pre>
 
 <style>
 
 
 table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    font-size: 12px;        width: 500px; text-align: left;    border-collapse: collapse; }
+    font-size: 12px;        width: 700px; text-align: left;    border-collapse: collapse; }
 
 th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
     border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
@@ -36,7 +43,7 @@ tr:hover td { background: #d0dafd; color: #339; }
 </style>
 
 
- <table> 
+ <table align="center"> 
 
  <tr>
  <th>Id</th>
@@ -50,7 +57,6 @@ tr:hover td { background: #d0dafd; color: #339; }
  <th>Solucion</th>
  <th>Modificacion</th>
  <th>Equipo</th>
- <th>Inmueble</th>
  </tr>';
  $i=0;
  $val=count($dataProvider);
@@ -68,14 +74,17 @@ tr:hover td { background: #d0dafd; color: #339; }
  <td>'.$dataProvider[$i]["SolucionFechaHora"].'</td>
  <td>'.$dataProvider[$i]["ModificacionFechaHora"].'</td>
  <td>'.$dataProvider[$i]["Equipo"].'</td>
- <td>'.$dataProvider[$i]["Inmueble"].'</td>
 
  </tr>'; $i++;
  }
  $html3='</table>';
 
- $mpdf = Yii::app()->ePdf->mpdf();
- //$mpdf->WriteHTML($html.$html2.$html3);
- $mpdf->Output('Reporte_Incidnetes.pdf','D');
- $mpdf->Output();
+ $mpdf=new mPDF('win-1252','LETTER-L','','',9,9,24,10,5,5);
+ //$mpdf = Yii::app()->ePdf->mpdf();
+ $mpdf->WriteHTML($html.$html2.$html3);
+ $mpdf->Output('RepIncidentes_'.date('Y/m/d').'.pdf','D');
+ //$mpdf->Output();
+
+
+ //$mpdf->Output();
  exit; ?>
