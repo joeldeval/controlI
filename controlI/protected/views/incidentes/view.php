@@ -4,19 +4,13 @@
 
 
 $this->menu=array(
-<<<<<<< HEAD
+
 	array('label'=>'Listar Incidentes', 'url'=>array('index')),
 	array('label'=>'Actualizar Incidente', 'url'=>array('update', 'id'=>$model->idIncidente)),
 	array('label'=>'Eliminar Incidente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idIncidente),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Administrar Incidentes', 'url'=>array('admin')),
-=======
-	array('label'=>'List Incidentes', 'url'=>array('index')),
-	array('label'=>'Create Incidentes', 'url'=>array('create')),
-	array('label'=>'Update Incidentes', 'url'=>array('update', 'id'=>$model->idIncidente)),
-	array('label'=>'Delete Incidentes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idIncidente),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Incidentes', 'url'=>array('admin')),
 	array('label'=>'Reporte de Incidentes', 'url'=>array('pdf')),
->>>>>>> f739eaa2b633b29d6c7d21feddc7adc1f96e8123
+
 );
 ?>
 

@@ -35,13 +35,6 @@
 		                                                       array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'Categoria'); ?>
   </div>
-  <!--
-	<div class="form-control ">
-		<?php echo $form->labelEx($model,'Estatus'); ?>
-		<?php echo $form->textField($model,'Estatus',array('size'=>45,'maxlength'=>45,'placeholder'=>'Nuevo',)); ?>
-		<?php echo $form->error($model,'Estatus'); ?>
-	</div>
--->
 
 	<div class="form-control">
 		<?php echo $form->labelEx($model,'Laboratorio'); ?>
