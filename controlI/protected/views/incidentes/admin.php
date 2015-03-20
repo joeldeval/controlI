@@ -47,6 +47,7 @@ $('.search-form form').submit(function(){
 		'Categoria',
 		'Estatus',
 		'Laboratorio',
+		/*'Inmueble',*/
 		//'Inmueble',
 		'Asignado',
 		'Urgencia',
