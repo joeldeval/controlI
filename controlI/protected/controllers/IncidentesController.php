@@ -63,6 +63,7 @@ class IncidentesController extends Controller
 	public function actionCreate()
 	{
 		$model=new Incidentes;
+		$msg = '';
 		
 		
 
@@ -72,28 +73,33 @@ class IncidentesController extends Controller
 			$model->InicioFechaHora = new CDbExpression('NOW()');
 			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
 			$model->Estatus = 'Nuevo';
-
+			
 
 			if ($model->validate()) {
-				
+				$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
 				if($model->Inmueble != ''){
 					//mkdir(__DIR__ .'SIHCi/sihci/users/'.$model->id_user.'/', 0777);
 					$model->Inmueble->saveAs(YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->Categoria.'.png');
 					$model->Inmueble ='/controlI/controlI/imagenes/fotos_reportes/'.$model->Categoria.'.png';
+			   			
 					if($model->save()){
 
 			   			$this->redirect(array('create','id'=>$model->idIncidente));
-
+			   			$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
 			   		}
 
+				}else{
+					$msg = "<strong class='text-error'>Debe seleccionar una Foto</strong>";
 				}
 
-			}//end if validate
+			}else{
+			$msg = $msg = "<strong class='text-error'>error al enviar su Reporte </strong>";
+			}
+			//end if validate
 		}
 	
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		$this->render('create',array('model'=>$model, 'msg' => $msg));
+
 	}
 
 	/**
