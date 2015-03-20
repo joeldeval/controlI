@@ -87,13 +87,9 @@ public function actionCerrar($id)
 	public function actionCreate()
 	{
 		$model=new Incidentes;
-<<<<<<< HEAD
 		$fecha=date('Y-m-d h:m:s');
-=======
+
 		$msg = '';
-		
->>>>>>> 522aa625fbc07241bc226d732e314acccfa8aa2c
-		
 
 			if(isset($_POST['Incidentes']))
 		{
@@ -122,16 +118,16 @@ public function actionCerrar($id)
 					$msg = "<strong class='text-error'>Debe seleccionar una Foto</strong>";
 				}
 
-<<<<<<< HEAD
+
 			}//end if validate
 			
-=======
+
 			}else{
 			$msg = $msg = "<strong class='text-error'>error al enviar su Reporte </strong>";
 			}
 			//end if validate
->>>>>>> 522aa625fbc07241bc226d732e314acccfa8aa2c
-		}
+
+		
 	
 		$this->render('create',array('model'=>$model, 'msg' => $msg));
 

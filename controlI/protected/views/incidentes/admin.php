@@ -46,11 +46,8 @@ $('.search-form form').submit(function(){
 		'Categoria',
 		'Estatus',
 		'Laboratorio',
-<<<<<<< HEAD
 		/*'Inmueble',*/
-=======
 		//'Inmueble',
->>>>>>> 522aa625fbc07241bc226d732e314acccfa8aa2c
 		'Asignado',
 		'Urgencia',
 		'SolucionFechaHora',
