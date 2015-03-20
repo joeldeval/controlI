@@ -122,10 +122,7 @@ public function actionCerrar($id)
 			}//end if validate
 			
 
-			}else{
-			$msg = $msg = "<strong class='text-error'>error al enviar su Reporte </strong>";
 			}
-			//end if validate
 
 		
 	
