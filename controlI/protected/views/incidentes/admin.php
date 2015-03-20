@@ -4,6 +4,7 @@
 
 $this->menu=array(
 	array('label'=>'Listar Incidentes', 'url'=>array('index')),
+	array('label'=>'Crear Incidente', 'url'=>array('create')),
 	array('label'=>'Actualizar Incidentes', 'url'=>array('update', 'id'=>$model->idIncidente)),
 	array('label'=>'Eliminar Incidentes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idIncidente),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Reporte de Incidentes', 'url'=>array('pdf')),
