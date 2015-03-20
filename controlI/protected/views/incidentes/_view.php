@@ -3,7 +3,7 @@
 /* @var $data Incidentes */
 ?>
 
-<div class="view">
+<div class="table table-striped table-hover table-condensed">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('ID')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->idIncidente), array('view', 'id'=>$data->idIncidente)); ?>
@@ -49,9 +49,7 @@
 	<?php echo CHtml::encode($data->Equipo); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Inmueble')); ?>:</b>
-	<?php echo CHtml::encode($data->Inmueble); ?>
-	<br />
+	
 	<br>
 	
 

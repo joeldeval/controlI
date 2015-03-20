@@ -26,16 +26,6 @@
 
   </div>
  
- <!--
-  <div class="form-group">
-  	<?php echo $form->labelEx($model,'Categoria'); ?>
-		<?php echo $form->dropDownList($model,'Categoria',array('equipo'=>'Equipo','infraestructura'=>'Infraestructura'), 
-		                                                       array('options' => array('equipo'=>array('selected'=>true))), 
-		                                                       array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'Categoria'); ?>
-  </div>
-  -->
-
  <div class="form-control">
 		<?php echo $form->labelEx($model,'Asignado'); ?>
 		<?php echo $form->textField($model,'Asignado',array('size'=>45,'maxlength'=>45,'placeholder'=>'Nombre',)); ?>
@@ -48,6 +38,8 @@
 		<?php echo $form->error($model,'SolucionFechaHora'); ?>
 	</div>
 
+<<<<<<< HEAD
+=======
 
 	<div class="form-control">
 		<?php echo $form->labelEx($model,'ModificacionFechaHora'); ?>
@@ -103,15 +95,12 @@
 		<?php echo $form->error($model,'Inmueble'); ?>
 
 	</div>-->
+>>>>>>> f739eaa2b633b29d6c7d21feddc7adc1f96e8123
 	
 	<div class="form-control">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Enviar' : 'Guardar',array('class'=>'btn btn-lg btn-primary')); ?>
 	</div>
 
- <!--  <div class="form-group">
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div> -->
   
 
 <?php $this->endWidget(); ?>

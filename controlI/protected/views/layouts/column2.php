@@ -15,7 +15,7 @@
 	<div class="col-sm-3 col-md-2 sidebar">
 	<?php
 		$this->beginWidget('zii.widgets.CPortlet', array(
-			'title'=>'Operations',
+			'title'=>'Operaciones',
 		));
 		$this->widget('zii.widgets.CMenu', array(
 			'items'=>$this->menu,

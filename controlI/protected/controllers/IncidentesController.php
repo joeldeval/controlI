@@ -87,7 +87,12 @@ public function actionCerrar($id)
 	public function actionCreate()
 	{
 		$model=new Incidentes;
+<<<<<<< HEAD
 		$fecha=date('Y-m-d h:m:s');
+=======
+		$msg = '';
+		
+>>>>>>> 522aa625fbc07241bc226d732e314acccfa8aa2c
 		
 
 			if(isset($_POST['Incidentes']))
@@ -96,31 +101,40 @@ public function actionCerrar($id)
 			$model->InicioFechaHora = $fecha;
 			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
 			$model->Estatus = 'Nuevo';
-
+			
 
 
 			
 			if ($model->validate()) {
-				
+				$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
 				if($model->Inmueble != ''){
 					//mkdir(__DIR__ .'SIHCi/sihci/users/'.$model->id_user.'/', 0777);
 					$model->Inmueble->saveAs(YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->Categoria.'.png');
 					$model->Inmueble ='/controlI/controlI/imagenes/fotos_reportes/'.$model->Categoria.'.png';
+			   			
 					if($model->save()){
 
 			   			$this->redirect(array('create','id'=>$model->idIncidente));
-
+			   			$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
 			   		}
 
+				}else{
+					$msg = "<strong class='text-error'>Debe seleccionar una Foto</strong>";
 				}
 
+<<<<<<< HEAD
 			}//end if validate
 			
+=======
+			}else{
+			$msg = $msg = "<strong class='text-error'>error al enviar su Reporte </strong>";
+			}
+			//end if validate
+>>>>>>> 522aa625fbc07241bc226d732e314acccfa8aa2c
 		}
 	
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		$this->render('create',array('model'=>$model, 'msg' => $msg));
+
 	}
 
 	/**

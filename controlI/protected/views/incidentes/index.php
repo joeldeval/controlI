@@ -7,8 +7,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Incidentes', 'url'=>array('create')),
-	array('label'=>'Manage Incidentes', 'url'=>array('admin')),
+	array('label'=>'Administrar Incidentes', 'url'=>array('admin')),
 );
 ?>
 
