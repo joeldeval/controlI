@@ -29,27 +29,20 @@ should you have any questions.</p> -->
           <h1 class="page-header">Reporta Incidentes dentro de los Laboratorios de CUTONALÁ</h1>
 
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
+            <div class="col-xs-6 col-sm-7 placeholder">
             <a href="<?php echo Yii::app()->homeUrl.'/incidentes/create' ?>">
               <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200" src="<?php echo Yii::app()->baseUrl; ?>/imagenes/reporta.png" data-holder-rendered="true">
             </a> 
-              <h4>1er Paso</h4>
+              <h4>REPORTA</h4>
               <span class="text-muted">Reporta tus inconvenientes.</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
+             <a href="<?php echo Yii::app()->homeUrl.'/incidentes/admin' ?>">
               <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200" src="<?php echo Yii::app()->baseUrl; ?>/imagenes/observa.png" data-holder-rendered="true">
-              <h4>2do Paso</h4>
-              <span class="text-muted">CTA observa reporte</span>
+              </a>
+              <h4>Administra</h4>
+              <span class="text-muted">CTA observa reporte.</span>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200" src="<?php echo Yii::app()->baseUrl; ?>/imagenes/asiste.png" data-holder-rendered="true">
-              <h4>3er Paso</h4>
-              <span class="text-muted">Asisten al Problema</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200" src="<?php echo Yii::app()->baseUrl; ?>/imagenes/repara.png" data-holder-rendered="true">
-              <h4>4to Paso</h4>
-              <span class="text-muted">Resuelven Problema</span>
-            </div>
+            
           </div>          
         </div>

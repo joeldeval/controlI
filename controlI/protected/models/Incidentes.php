@@ -39,7 +39,7 @@ class Incidentes extends CActiveRecord
 			array('Descripcion, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Inmueble','file', 'allowEmpty'=>false,
+			array('Inmueble','file', 'allowEmpty'=>true,
 			                  'types'=>'png, jpg, jpeg, gif',
 			                  'maxSize'=>array(1024 * 2000),
 			                  'message'=>'Debes Seleccionar Foto'),
