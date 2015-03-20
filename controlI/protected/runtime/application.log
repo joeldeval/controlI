@@ -2920,4 +2920,34 @@ HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes
 ---
 =======
 >>>>>>> 4063fd9cc20d28384615fd8124788f7138a19d3f
+<<<<<<< HEAD
 >>>>>>> 742e6950adc1940369feb8c055e3ffccdcbda8d5
+=======
+2015/03/19 23:41:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "imagenes/fotos_reportes/nlk.png"' in C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('imagenes/fotos_...')
+#1 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/nlk.png
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/3
+---
+2015/03/19 23:41:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "imagenes/fotos_reportes/nlk.png"' in C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('imagenes/fotos_...')
+#1 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/nlk.png
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/3
+---
+2015/03/19 23:43:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "imagenes/fotos_reportes/nlk.png"' in C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('imagenes/fotos_...')
+#1 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/nlk.png
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/3
+---
+>>>>>>> a06d3fe1cdf4338a1ce5dc82eddb24647ff2fdc8
