@@ -2951,3 +2951,33 @@ REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/nlk.png
 HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/3
 ---
 >>>>>>> a06d3fe1cdf4338a1ce5dc82eddb24647ff2fdc8
+2015/03/19 23:52:39 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\xampp\htdocs\controlI\controlI\assets" es inválido. Asegúrese que el directorio exista y tenga permisos de escritura por el proceso que corre el servidor Web.' in C:\xampp\htdocs\controlI\yii\framework\web\CAssetManager.php:138
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\controlI\yii\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\controlI\yii\framework\zii\widgets\grid\CGridView.php(350): CAssetManager->publish('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\controlI\controlI\protected\views\incidentes\admin.php(63): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\controlI\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\xampp\htdocs\controlI\controlI\protected\controllers\IncidentesController.php(234): CController->render('admin', Array)
+#11 C:\xampp\htdocs\controlI\yii\framework\web\actions\CInlineAction.php(49): IncidentesController->actionAdmin()
+#12 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/admi...')
+#22 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/controlI/controlI/index.php/incidentes/admin
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/3
+---
