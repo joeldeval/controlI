@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="language" content="en">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/signin.css" />
+  <link href=<?php echo Yii::app()->request->baseUrl."/imagenes/favicon.png" ?> type="image/x-icon" rel="shortcut icon" />
 	<?php 
 	echo Yii::app()->bootstrap->registerAllCss(); 
 	echo Yii::app()->bootstrap->registerCoreScripts(); 
@@ -17,7 +18,6 @@
 </head>
 
 <body>
-
 	<div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
@@ -76,27 +76,9 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<?php echo Yii::app()->baseUrl?>/js/jquery.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-transition.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-alert.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-modal.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-dropdown.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-scrollspy.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-tab.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-tooltip.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-popover.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-button.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-collapse.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-carousel.js"></script>
-    <script src="<?php echo Yii::app()->baseUrl?>/js/bootstrap-typeahead.js"></script>
- <script>
-    !function ($) {
-      $(function(){
-        // carousel demo
-        $('#myCarousel').carousel()
-      })
-    }(window.jQuery)
-  </script>
+  
+      
+
  
   </body>
 </html>

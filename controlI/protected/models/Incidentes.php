@@ -35,10 +35,14 @@ class Incidentes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Descripcion, InicioFechaHora, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo, Inmueble', 'required'),
-			array('Descripcion, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo, Inmueble', 'length', 'max'=>45),
+			array('Descripcion, InicioFechaHora, Categoria, Estatus, Laboratorio,  Urgencia, Equipo', 'required'),
+			array('Descripcion, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
+			array('Inmueble','file', 'allowEmpty'=>true,
+			                  'types'=>'png, jpg, jpeg, gif',
+			                  'maxSize'=>array(1024 * 2000),
+			                  'message'=>'Debes Seleccionar Foto'),
 			array('idIncidente, Descripcion, InicioFechaHora, Categoria, Estatus, Laboratorio, Asignado, Urgencia, SolucionFechaHora, ModificacionFechaHora, Equipo, Inmueble', 'safe', 'on'=>'search'),
 		);
 	}
@@ -60,18 +64,18 @@ class Incidentes extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idIncidente' => 'Id Incidente',
+			'idIncidente' => 'ID',
 			'Descripcion' => 'Descripcion',
-			'InicioFechaHora' => 'Inicio Fecha Hora',
+			'InicioFechaHora' => 'Inicio',
 			'Categoria' => 'Categoria',
 			'Estatus' => 'Estatus',
 			'Laboratorio' => 'Laboratorio',
 			'Asignado' => 'Asignado',
 			'Urgencia' => 'Urgencia',
-			'SolucionFechaHora' => 'Solucion Fecha Hora',
-			'ModificacionFechaHora' => 'Modificacion Fecha Hora',
+			'SolucionFechaHora' => 'Solucion',
+			'ModificacionFechaHora' => 'Modificacion',
 			'Equipo' => 'Equipo',
-			'Inmueble' => 'Inmueble',
+			'Inmueble' => 'Foto',
 		);
 	}
 
@@ -106,6 +110,12 @@ class Incidentes extends CActiveRecord
 		$criteria->compare('Equipo',$this->Equipo,true);
 		$criteria->compare('Inmueble',$this->Inmueble,true);
 
+		$_SESSION['datos_filtrados'] = new CActiveDataProvider($this, array(
+ 		'criteria'=>$criteria,
+		
+		 'pagination'=>false,
+ 			));
+			
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

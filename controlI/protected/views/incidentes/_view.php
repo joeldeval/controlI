@@ -3,9 +3,9 @@
 /* @var $data Incidentes */
 ?>
 
-<div class="view">
+<div class="table table-striped table-hover table-condensed">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('idIncidente')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ID')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->idIncidente), array('view', 'id'=>$data->idIncidente)); ?>
 	<br />
 
@@ -13,7 +13,7 @@
 	<?php echo CHtml::encode($data->Descripcion); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('InicioFechaHora')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Inicio')); ?>:</b>
 	<?php echo CHtml::encode($data->InicioFechaHora); ?>
 	<br />
 
@@ -32,17 +32,16 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Asignado')); ?>:</b>
 	<?php echo CHtml::encode($data->Asignado); ?>
 	<br />
-
-	<?php /*
+	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Urgencia')); ?>:</b>
 	<?php echo CHtml::encode($data->Urgencia); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('SolucionFechaHora')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Solucion')); ?>:</b>
 	<?php echo CHtml::encode($data->SolucionFechaHora); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('ModificacionFechaHora')); ?>:</b>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Modificacion')); ?>:</b>
 	<?php echo CHtml::encode($data->ModificacionFechaHora); ?>
 	<br />
 
@@ -50,10 +49,8 @@
 	<?php echo CHtml::encode($data->Equipo); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Inmueble')); ?>:</b>
-	<?php echo CHtml::encode($data->Inmueble); ?>
-	<br />
-
-	*/ ?>
+	
+	<br>
+	
 
 </div>

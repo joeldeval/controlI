@@ -28,15 +28,15 @@ class IncidentesController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','pdf'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create'),
+				'actions'=>array('create','pdf'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete', 'update'),
+				'actions'=>array('admin','delete', 'update','pdf','cerrar'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -56,6 +56,30 @@ class IncidentesController extends Controller
 		));
 	}
 
+
+
+public function actionCerrar($id)
+	{
+		$model=$this->loadModel($id);
+		$fecha=date('Y-m-d H:i:s');
+		
+		if(isset($_POST['Incidentes']))
+		{
+			$model->attributes=$_POST['Incidentes'];
+			$model->SolucionFechaHora = $fecha;
+			$model->Estatus = 'Cerrado';
+
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->idIncidente));
+		}
+
+
+		$this->render('cerrar',array(
+			'model'=>$model,
+		));
+
+	}
+
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -63,22 +87,47 @@ class IncidentesController extends Controller
 	public function actionCreate()
 	{
 		$model=new Incidentes;
+		$fecha=date('Y-m-d h:m:s');
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$msg = '';
 
-		if(isset($_POST['Incidentes']))
+			if(isset($_POST['Incidentes']))
 		{
 			$model->attributes=$_POST['Incidentes'];
-			$model->InicioFechaHora = 'NOW()';
-			if($model->save()){
-				$this->redirect(array('create','id'=>$model->idIncidente));
-			}
-		}
+			$model->InicioFechaHora = $fecha;
+			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
+			$model->Estatus = 'Nuevo';
+			
 
-		$this->render('create',array(
-			'model'=>$model,
-		));
+
+			
+			if ($model->validate()) {
+				$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
+				if($model->Inmueble != ''){
+					//mkdir(__DIR__ .'SIHCi/sihci/users/'.$model->id_user.'/', 0777);
+					$model->Inmueble->saveAs(YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->Categoria.'.png');
+					$model->Inmueble ='/controlI/controlI/imagenes/fotos_reportes/'.$model->Categoria.'.png';
+			   			
+					if($model->save()){
+
+			   			$this->redirect(array('create','id'=>$model->idIncidente));
+			   			$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
+			   		}
+
+				}else{
+					$msg = "<strong class='text-error'>Debe seleccionar una Foto</strong>";
+				}
+
+
+			}//end if validate
+			
+
+			}
+
+		
+	
+		$this->render('create',array('model'=>$model, 'msg' => $msg));
+
 	}
 
 	/**
@@ -89,16 +138,47 @@ class IncidentesController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
+		$fecha=date('Y-m-d H:i:s');
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['Incidentes']))
+		{
+			$model->attributes=$_POST['Incidentes'];
+			$model->ModificacionFechaHora = $fecha;
+			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
+			if ($model->validate()) {
+				//if (!file_exists('/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/')) {
+   					//	 mkdir('/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/', 0777);
+
+   					//	$model->photo_url->saveAs(YiiBase::getPathOfAlias("webroot").'/users/'.$model->id_user.'/cve-hc/perfil.png');
+					// 	$model->photo_url ='/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/perfil.png';
+					// }
+				if($model->Inmueble != ''){
+					$model->Inmueble->saveAs(YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->InicioFechaHora.'.png');
+				//		$model->photo_url ='/SIHCi/sihci/users/'.$model->id_user.'.png';
+					if($model->save()){
+						$this->redirect(array('view','id'=>$model->idIncidente));
+			   		}
+						
+					
+				}else{
+					$model->Inmueble = YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->InicioFechaHora.'.png';
+					if($model->save()){
+						$this->redirect(array('view','id'=>$model->idIncidente));
+			   		}
+				}
+				
+			}
+			
+		}
+
+
+		/*if(isset($_POST['Incidentes']))
 		{
 			$model->attributes=$_POST['Incidentes'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idIncidente));
-		}
+		}*/
 
 		$this->render('update',array(
 			'model'=>$model,
@@ -129,6 +209,12 @@ class IncidentesController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+
+
+	public function actionPdf()
+ 	{
+ 		$this->render('pdf');
+ 	}
 
 	/**
 	 * Manages all models.
