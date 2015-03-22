@@ -20,7 +20,7 @@
 <div class="form-group">
 
 		<?php echo $form->labelEx($model,'Descripcion'); ?>
-		<?php echo $form->textArea($model,'Descripcion',array('size'=>80,'maxlength'=>300,'placeholder'=>'Descripcion',
+		<?php echo $form->textArea($model,'Descripcion',array('size'=>90,'maxlength'=>300,'placeholder'=>'Descripcion',
 																'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Descripcion'); ?>
 

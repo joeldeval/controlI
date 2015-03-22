@@ -58,12 +58,15 @@ class IncidentesController extends Controller
 
 
 
+
+
+
 public function actionCerrar($id)
 	{
 		$model=$this->loadModel($id);
 		$fecha=date('Y-m-d H:i:s');
 		
-		if(isset($_POST['Incidentes']))
+		if(isset($_POST['Incidentes']))		
 		{
 			$model->attributes=$_POST['Incidentes'];
 			$model->SolucionFechaHora = $fecha;
@@ -73,8 +76,9 @@ public function actionCerrar($id)
 				$this->redirect(array('view','id'=>$model->idIncidente));
 		}
 
-
-		$this->render('cerrar',array(
+		
+ 		
+ 		$this->render('update',array(
 			'model'=>$model,
 		));
 
@@ -84,6 +88,10 @@ public function actionCerrar($id)
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
+
+	
+
+
 	public function actionCreate()
 	{
 		$model=new Incidentes;
