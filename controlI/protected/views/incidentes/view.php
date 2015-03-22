@@ -7,6 +7,7 @@ $this->menu=array(
 
 	array('label'=>'Listar Incidentes', 'url'=>array('index')),
 	array('label'=>'Actualizar Incidente', 'url'=>array('update', 'id'=>$model->idIncidente)),
+	array('label'=>'Cerrar Incidencia', 'url'=>array('cerrar', 'id'=>$model->idIncidente)),
 	array('label'=>'Eliminar Incidente', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idIncidente),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Administrar Incidentes', 'url'=>array('admin')),
 
