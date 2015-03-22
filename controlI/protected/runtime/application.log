@@ -3867,3 +3867,12 @@ Stack trace:
 REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/nlk.png
 HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/3
 ---
+2015/03/22 17:14:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "imagenes/fotos_reportes/nlk.png"' in C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('imagenes/fotos_...')
+#1 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/nlk.png
+HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/3
+---

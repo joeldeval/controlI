@@ -55,34 +55,18 @@ $('.search-form form').submit(function(){
 		'ModificacionFechaHora',
 		'Equipo',
 		
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 		/*
 		array(
 			'class'=>'CButtonColumn',
 		),
 		*/
 
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 		array(          
 			'class'=>'CButtonColumn',                  
 			'template' => '{view} {update} {delete} {cerrar}',              
-			'buttons'=>array(                      
-<<<<<<< HEAD
-				 'Cerrar' => array(                              
-				'label'=>'cerrar',                               
-				'url'=>"CHtml::normalizeUrl(array('cerrar', 'id'=>\$data->id ))",                
-				'imageUrl'=>Yii::app()->request->baseUrl.'/imagenes/cerrar.png',                               
-				'options' => array('class'=>'Cerrar'),                      
-				),             
-			 ),    
-		  ),
-=======
+			'buttons'=>array(                 				
 				'cerrar' => array(                              
 				'label'=>'Cerrar Incidente','url'=>"CHtml::normalizeUrl(array('cerrar', 'id'=>\$data->idIncidente ))",                
 				'imageUrl'=>Yii::app()->request->baseUrl.'/imagenes/cerrar.png',                               
@@ -90,7 +74,7 @@ $('.search-form form').submit(function(){
 				 ),              
 			),      
 		),
->>>>>>> master
+
  
 
 		//'htmlOptions'=>array('class'=>'table'),
