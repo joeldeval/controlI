@@ -5,7 +5,9 @@
 $this->menu=array(
 	array('label'=>'Listar Incidentes', 'url'=>array('index')),
 	array('label'=>'Crear Incidente', 'url'=>array('create')),
-	array('label'=>'Reporte de Incidentes', 'url'=>array('reportes')),
+	array('label'=>'Administrar incidentes', 'url'=>array('admin')),
+	array('label'=>'Crear PDF', 'url'=>array('pdf')),
+
 
 	
 );
@@ -24,14 +26,20 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Administrar Incidentes</h1>
+<h1>Reportes de Incidencia</h1>
 
-<?php echo CHtml::link('','#',array('class'=>'search-button')); ?>
+
+<?php echo CHtml::link('Realiza la busqueda para crear un reporte.','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
+
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
 )); ?>
+
+
 </div>
+
+
 
 <!-- search-form -->
 <div class="table-responsive">

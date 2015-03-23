@@ -3312,3 +3312,59 @@ Stack trace:
 REQUEST_URI=/controlI/controlI/imagenes/fotos_reportes/nlk.png
 HTTP_REFERER=http://localhost/controlI/controlI/index.php/incidentes/3
 ---
+2015/03/22 20:05:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\controlI\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/upda...')
+#10 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controli/controlI/index.php/incidentes/update/
+HTTP_REFERER=http://localhost/controli/controlI/index.php/incidentes/admin
+---
+2015/03/22 20:06:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\controlI\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(1116): CFilterChain->run()
+#3 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#4 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#12 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#13 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/controli/controlI/index.php/incidentes/delete/
+HTTP_REFERER=http://localhost/controli/controlI/index.php/incidentes/reportes
+---
+2015/03/22 21:05:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\controlI\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/upda...')
+#10 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/controli/controlI/index.php/incidentes/update
+---

@@ -9,15 +9,9 @@ $pdf = Yii::createComponent('application.vendors.mpdf.mpdf');
 $html2="";
  $html='
 
-<frameset cols="120,*">
-<frame name="sx" src="sx.htm">
-<frameset rows="100,*">
-<frame name="alto" src="top.htm"> 
-<frame name="central" src="central.htm">
-</frameset> 
-
-</frameset>
-<h2 align="center" >Control de Incidentes de laboratorios CUTonalá</h2>      
+<h1 align="center">InciLab</h1> 
+<br>
+<h3 align="center" >Control de Incidentes de laboratorios CUTonalá</h3>      
       	
  
 

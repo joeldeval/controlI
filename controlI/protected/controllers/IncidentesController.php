@@ -28,7 +28,7 @@ class IncidentesController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','pdf'),
+				'actions'=>array('index','view','pdf','reportes'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -36,7 +36,7 @@ class IncidentesController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete', 'update','pdf','cerrar'),
+				'actions'=>array('admin','delete', 'update','pdf','cerrar','reportes'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -230,6 +230,22 @@ public function actionCerrar($id)
 			'model'=>$model,
 		));
 	}
+
+	/*
+	Creacion de Reportes.
+	*/
+	public function actionReportes()
+	{
+		$model=new Incidentes('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Incidentes']))
+			$model->attributes=$_GET['Incidentes'];
+
+		$this->render('reportes',array(
+			'model'=>$model,
+		));
+	}
+
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
