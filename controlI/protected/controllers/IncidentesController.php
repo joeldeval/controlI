@@ -110,7 +110,7 @@ public function actionCerrar($id)
 			   			
 					if($model->save()){
 
-			   			$this->redirect(array('create','id'=>$model->idIncidente));
+			   		
 			   			$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
 			   		}
 
