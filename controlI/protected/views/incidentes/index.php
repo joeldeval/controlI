@@ -10,7 +10,8 @@ $this->menu=array(
 	array('label'=>'Administrar Incidentes', 'url'=>array('admin')),
 );
 ?>
-
+<div id="form-main">
+  <div id="form-div">
 <h1>Incidentes</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(

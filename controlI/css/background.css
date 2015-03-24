@@ -1,0 +1,65 @@
+.carrusel img
+{
+	width: 100%;
+	float: left;
+}
+.opcity
+{
+	position: absolute;
+	background: #1D1F20;
+	opacity: .60;
+	width: 100%;	
+}
+#imgReporta
+{
+	position: absolute;
+	width: 200px !important;
+	height: 200px !important;
+	display: block;
+	margin-left: 22%;
+	margin-right: auto;
+	margin-top: 90px;
+	left: 0;
+	right: 0;
+   	 
+}
+.textReporta
+{
+	position: absolute;
+	width: 850px;
+	display: block;
+    margin-left: 15%;
+	margin-top: 300px;
+	color: #007380;
+	text-align: left;
+	left: 0;
+	right: 0;
+
+}
+
+#imgAdmin
+{
+	position: absolute;
+	width: 200px !important;
+	height: 200px !important;
+ 	 display: block;
+	margin-left: 60%;
+	margin-right: auto;
+	margin-top: 90px;
+	left: 0;
+	right: 0;
+   	 
+}
+.textAdmin
+{
+	position: absolute;
+	width: 850px;
+	display: block;
+    margin-left: 12%;
+	margin-top: 300px;
+	color: #700000;
+	text-align: right;
+	left: 0;
+	right: 0;
+
+}

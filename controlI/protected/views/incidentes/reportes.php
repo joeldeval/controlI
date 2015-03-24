@@ -3,13 +3,8 @@
 /* @var $model Incidentes */
 
 $this->menu=array(
-	array('label'=>'Listar Incidentes', 'url'=>array('index')),
-	array('label'=>'Crear Incidente', 'url'=>array('create')),
 	array('label'=>'Administrar incidentes', 'url'=>array('admin')),
 	array('label'=>'Crear PDF', 'url'=>array('pdf')),
-
-
-	
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -55,22 +50,12 @@ $('.search-form form').submit(function(){
 		'Categoria',
 		'Estatus',
 		'Laboratorio',
-		/*'Inmueble',*/
-		//'Inmueble',
 		'Asignado',
 		'Urgencia',
 		'SolucionFechaHora',
 		'ModificacionFechaHora',
 		'Equipo',
-		
-
-		/*
-		array(
-			'class'=>'CButtonColumn',
-		),
-		*/
-
-		array(          
+			array(          
 			'class'=>'CButtonColumn',                  
 			'template' => '{view} {update} {delete} {cerrar}',              
 			'buttons'=>array(                      
@@ -81,8 +66,5 @@ $('.search-form form').submit(function(){
 				 ),              
 			),      
 		),
- 
-
-		//'htmlOptions'=>array('class'=>'table'),
-	),
+ 	),
 )); ?>

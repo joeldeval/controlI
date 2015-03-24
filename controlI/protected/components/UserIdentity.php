@@ -23,7 +23,7 @@ class UserIdentity extends CUserIdentity
 
 		if($user===null)
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($this->password!==$user->Password)
+		elseif(sha1(md5($this->password))!==$user->Password)
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		else{
 			$this->_id=$user->idCTA;

@@ -4,11 +4,9 @@
 
 
 
-    <div class="main">
-     <div class="center">
+<div class="center">
 		<?php echo $content; ?>
-		</div>
-	</div><!-- content -->
+</div>
 
 
 <div >

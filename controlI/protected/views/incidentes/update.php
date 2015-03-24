@@ -9,7 +9,8 @@ $this->menu=array(
 
 );
 ?>
-
+<div id="form-main">
+  <div id="form-div">
 <h1>Actualizar Incidente <?php echo $model->idIncidente; ?></h1>
 
 <?php $this->renderPartial('_form2', array('model'=>$model)); ?>

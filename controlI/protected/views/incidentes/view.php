@@ -13,7 +13,8 @@ $this->menu=array(
 
 );
 ?>
-
+<div id="form-main">
+  <div id="form-div">
 <h1>Detalles de Incidente #<?php echo $model->idIncidente; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
