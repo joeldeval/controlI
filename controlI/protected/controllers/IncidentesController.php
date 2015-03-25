@@ -108,12 +108,6 @@ public function actionCerrar($id)
 					$model->Inmueble ='/controlI/controlI/imagenes/fotos_reportes/'.$model->Categoria.'.png';
 			   			
 					if($model->save()){
-
-<<<<<<< HEAD
-			   			/*$this->redirect(array('create','id'=>$model->idIncidente));*/
-=======
-			   		
->>>>>>> b1c9b57a76391a30eb04ba5699ba01c2de46cb49
 			   			$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
 			   			$model->Inmueble = '';							
 						$model->Estatus = '';

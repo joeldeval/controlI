@@ -2,21 +2,16 @@
 /* @var $this CtaController */
 /* @var $model Cta */
 
-$this->breadcrumbs=array(
-	'Ctas'=>array('index'),
-	$model->idCta,
-);
 
 $this->menu=array(
-	array('label'=>'List Cta', 'url'=>array('index')),
-	array('label'=>'Create Cta', 'url'=>array('create')),
-	array('label'=>'Update Cta', 'url'=>array('update', 'id'=>$model->idCta)),
-	array('label'=>'Delete Cta', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idCta),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Cta', 'url'=>array('admin')),
+	array('label'=>'Actualizar Usuario', 'url'=>array('update', 'id'=>$model->idCta)),
+	array('label'=>'Eliminar Usuario', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idCta),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Usuarios', 'url'=>array('admin')),
 );
 ?>
-
-<h1>View Cta #<?php echo $model->idCta; ?></h1>
+<div id="form-main">
+  <div id="form-div">
+<h1>Detalles de Usuario #<?php echo $model->idCta; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

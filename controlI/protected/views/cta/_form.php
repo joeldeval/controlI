@@ -4,7 +4,8 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
+
+
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'cta-form',
@@ -15,30 +16,24 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	
 
 	<?php echo $form->errorSummary($model); ?>
+<div class="login">
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Password'); ?>
-		<?php echo $form->passwordField($model,'Password',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'Password'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'Nombre'); ?>
 		<?php echo $form->textField($model,'Nombre',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'Nombre'); ?>
-	</div>
 
-	<div class="row">
+		<?php echo $form->labelEx($model,'Password'); ?>
+		<?php echo $form->passwordField($model,'Password',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'Password'); ?>
+	
 		<?php echo $form->labelEx($model,'Jerarquia'); ?>
 		<?php echo $form->textField($model,'Jerarquia',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'Jerarquia'); ?>
-	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar',array('class'=>'btn btn-lg btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

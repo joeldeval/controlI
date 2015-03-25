@@ -3,7 +3,8 @@
 /* @var $data Cta */
 ?>
 
-<div class="view">
+
+<div class="table ">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idCta')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->idCta), array('view', 'id'=>$data->idCta)); ?>
@@ -21,5 +22,5 @@
 	<?php echo CHtml::encode($data->Jerarquia); ?>
 	<br />
 
-
 </div>
+<br><br>
