@@ -6,7 +6,7 @@
 .opcity
 {
 	position: absolute;
-	background: #1D1F20;
+	background: #000;
 	opacity: .60;
 	width: 100%;	
 }
@@ -63,3 +63,4 @@
 	right: 0;
 
 }
+
