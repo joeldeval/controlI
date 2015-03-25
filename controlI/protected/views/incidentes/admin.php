@@ -6,6 +6,7 @@ $this->menu=array(
 	array('label'=>'Listar Incidentes', 'url'=>array('index')),
 	array('label'=>'Crear Incidente', 'url'=>array('create')),
 	array('label'=>'Reporte de Incidentes', 'url'=>array('reportes')),
+	array('label'=>'Usuarios de CTA', 'url'=> Yii::app()->homeUrl.'/cta'),
 
 	
 );

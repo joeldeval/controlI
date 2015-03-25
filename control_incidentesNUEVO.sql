@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
+USE control_incidentes;
 --
 -- Estructura de tabla para la tabla `cta`
 --
