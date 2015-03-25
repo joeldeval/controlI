@@ -3496,6 +3496,7 @@ Stack trace:
 REQUEST_URI=/proyectogit/controlI/controlI/index.php/incidentes/delete/20?ajax=incidentes-grid
 HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
 ---
+<<<<<<< HEAD
 2015/03/24 16:17:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "cta"' in C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php:286
 Stack trace:
 #0 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cta')
@@ -3511,4 +3512,26 @@ Stack trace:
 #2 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
 #3 {main}
 REQUEST_URI=/controli/controlI/index.php/cta
+=======
+2015/03/24 20:33:01 [error] [exception.CException] exception 'CException' with message 'La propiedad "Cta"."idCTA" no se encuentra definida.' in C:\wamp\www\proyectoGit\controlI\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('idCTA')
+#1 C:\wamp\www\proyectoGit\controlI\controlI\protected\components\UserIdentity.php(29): CActiveRecord->__get('idCTA')
+#2 C:\wamp\www\proyectoGit\controlI\controlI\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\wamp\www\proyectoGit\controlI\controlI\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/site/login
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/site/login
+>>>>>>> b1c9b57a76391a30eb04ba5699ba01c2de46cb49
 ---

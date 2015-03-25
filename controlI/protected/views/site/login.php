@@ -21,7 +21,7 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 <h1>Inicia Sesión</h1>
-
+<?php echo sha1(md5("superusuarioroot")) ?>
 <?php echo $form->errorSummary($model, null, null,array("class"=>"alert alert-error")); ?>
 		<div class="login">
 		<p class="name">

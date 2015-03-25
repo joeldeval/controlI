@@ -26,7 +26,7 @@ class UserIdentity extends CUserIdentity
 		elseif(sha1(md5($this->password))!==$user->Password)
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		else{
-			$this->_id=$user->idCTA;
+			$this->_id=$user->idCta;
 			$this->_jerarquia=$user->Jerarquia;
 			$this->setState("Jerarquia", $user->Jerarquia);
 			$this->errorCode=self::ERROR_NONE;
