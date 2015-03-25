@@ -1,10 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-<<<<<<< HEAD
-body{    background:url(http://localhost/proyectogit/controlI/controlI/imagenes/fon.png) no-repeat;
-=======
 body{    background:url() no-repeat;
->>>>>>> 4ace653f769d6abebc329df087cdb3f8d6b127ad
+  background-color: #eee;
   background-size: cover;
   height:100%;
 }
