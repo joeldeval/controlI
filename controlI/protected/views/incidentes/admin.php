@@ -6,7 +6,7 @@ $this->menu=array(
 	array('label'=>'Listar Incidentes', 'url'=>array('index')),
 	array('label'=>'Crear Incidente', 'url'=>array('create')),
 	array('label'=>'Reporte de Incidentes', 'url'=>array('reportes')),
-	array('label'=>'Usuarios de CTA', 'url'=> Yii::app()->homeUrl.'/cta'),
+	array('label'=>'Usuarios de CTA', 'url'=> Yii::app()->homeUrl.'/cta/admin'),
 
 	
 );
@@ -38,7 +38,7 @@ $('.search-form form').submit(function(){
 <div class="table-responsive">
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'incidentes-grid',
-	'itemsCssClass'=>'table table-striped table-hover table-condensed',
+	'itemsCssClass'=>'table table-striped table-hover',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
