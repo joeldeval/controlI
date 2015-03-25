@@ -30,7 +30,7 @@ should you have any questions.</p> -->
       <div class="carrusel">
 
         <img  id="back" src="<?php echo Yii::app()->baseUrl; ?>/imagenes/background.jpg">
-          <div class="opcity"></div>
+          
              <a href="<?php echo Yii::app()->homeUrl.'/incidentes/create' ?>">
               <img id="imgReporta"  src="<?php echo Yii::app()->baseUrl; ?>/imagenes/reporta.png">
             </a> 
@@ -45,7 +45,7 @@ should you have any questions.</p> -->
           <div class="textAdmin">
             <h2 id="textfont">Observa incidentes.</h2>
           </div>
-
+<div class="opcity"></div>
         </div>
   </section> 
 
