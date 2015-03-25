@@ -3770,3 +3770,169 @@ REQUEST_URI=/controli/controli/index.php/cta/admin
 HTTP_REFERER=http://localhost/controli/controli/index.php/cta/
 >>>>>>> 39ecd1651a763f6a242cc89bbd32e22ec3ed66d8
 ---
+2015/03/24 23:05:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cta/admin')
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/cta/admin
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/24 23:05:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cta/admin')
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/cta/admin
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/24 23:05:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/inde...')
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/incidentes/index
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/24 23:06:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/upda...')
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/incidentes/update/2
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/24 23:06:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/dele...')
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/incidentes/delete/2
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/2
+---
+2015/03/24 23:06:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cta/admin')
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/cta/admin
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/24 23:14:28 [error] [exception.CException] exception 'CException' with message 'La propiedad "CDetailView"."itemsCssClass" no se encuentra definida.' in C:\wamp\www\proyectoGit\controlI\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('itemsCssClass', 'table table-str...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CtaController), 'zii.widgets.CDe...', Array)
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 C:\wamp\www\proyectoGit\controlI\controlI\protected\views\cta\view.php(25): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\pro...')
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\pro...', Array, true)
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\pro...', Array, true)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\wamp\www\proyectoGit\controlI\controlI\protected\controllers\CtaController.php(60): CController->render('view', Array)
+#9 [internal function]: CtaController->actionView('1')
+#10 C:\wamp\www\proyectoGit\controlI\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CtaController), Array)
+#11 C:\wamp\www\proyectoGit\controlI\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CtaController), Object(ReflectionMethod), Array)
+#12 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cta/view')
+#22 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/cta/1
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/cta/index
+---
+2015/03/24 23:25:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('incidentes/inde...')
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/incidentes/index
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
+---
+2015/03/24 23:26:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\proyectoGit\controlI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\proyectoGit\controlI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\proyectoGit\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cta/admin')
+#9 C:\wamp\www\proyectoGit\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\wamp\www\proyectoGit\controlI\controlI\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/proyectogit/controlI/controlI/index.php/cta/admin
+HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
+---

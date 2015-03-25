@@ -5,8 +5,8 @@
 
 $this->menu=array(
 	array('label'=>'Listar Usuarios', 'url'=>array('index')),
-
 	array('label'=>'Crear Usuario', 'url'=>array('create')),
+	array('label'=>'Administrar Incidentes', 'url'=> Yii::app()->homeUrl.'/incidentes/admin'),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,23 +26,23 @@ $('.search-form form').submit(function(){
 
 <h1>Administrar Usuarios</h1>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('Búsqueda Avanzada','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
 )); ?>
 </div><!-- search-form -->
+
+
 <div class="table-responsive">
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'cta-grid',
-	'itemsCssClass'=>'table table-striped table-hover table-condensed',
+	'itemsCssClass'=>'table table-striped table-hover',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
 		'idCta',
-		'Password',
 		'Nombre',
-		'Jerarquia',
 		array(
 			'class'=>'CButtonColumn',
 		),

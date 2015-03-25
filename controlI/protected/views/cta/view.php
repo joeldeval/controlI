@@ -16,10 +16,10 @@ $this->menu=array(
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
+	'itemCssClass'=>'table table-striped table-hover  table-condensed',
 	'attributes'=>array(
 		'idCta',
-		'Password',
 		'Nombre',
-		'Jerarquia',
+	
 	),
 )); ?>
