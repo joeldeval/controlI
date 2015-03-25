@@ -3,16 +3,16 @@
 /* @var $model Cta */
 
 $this->breadcrumbs=array(
-	'Ctas'=>array('index'),
-	'Create',
+	'Cta'=>array('index'),
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Cta', 'url'=>array('index')),
-	array('label'=>'Manage Cta', 'url'=>array('admin')),
+	array('label'=>'Listar Usuarios', 'url'=>array('index')),
+	array('label'=>'Administrar Usuarios', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Cta</h1>
+<h1>Crear Usuario Cta</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

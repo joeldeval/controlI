@@ -3,13 +3,13 @@
 /* @var $model Cta */
 
 $this->breadcrumbs=array(
-	'Ctas'=>array('index'),
-	'Manage',
+	'Cta'=>array('index'),
+	'Administrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Cta', 'url'=>array('index')),
-	array('label'=>'Create Cta', 'url'=>array('create')),
+	array('label'=>'Listar Usuarios', 'url'=>array('index')),
+	array('label'=>'Crear Usuario', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Ctas</h1>
+<h1>Administrar Usuarios Cta</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

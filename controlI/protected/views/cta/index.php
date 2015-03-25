@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Ctas',
+	'Cta',
 );
 
 $this->menu=array(
-	array('label'=>'Create Cta', 'url'=>array('create')),
-	array('label'=>'Manage Cta', 'url'=>array('admin')),
+	array('label'=>'Crear Usuario', 'url'=>array('create')),
+	array('label'=>'Administrar Usuarios', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Ctas</h1>
+<h1>Cta</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -3,19 +3,19 @@
 /* @var $model Cta */
 
 $this->breadcrumbs=array(
-	'Ctas'=>array('index'),
+	'Cta'=>array('index'),
 	$model->idCta=>array('view','id'=>$model->idCta),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Cta', 'url'=>array('index')),
-	array('label'=>'Create Cta', 'url'=>array('create')),
-	array('label'=>'View Cta', 'url'=>array('view', 'id'=>$model->idCta)),
-	array('label'=>'Manage Cta', 'url'=>array('admin')),
+	array('label'=>'Listar Usuarios', 'url'=>array('index')),
+	array('label'=>'Crear Usuario', 'url'=>array('create')),
+	array('label'=>'Ver Usuario', 'url'=>array('view', 'id'=>$model->idCta)),
+	array('label'=>'Administrar Usuarios', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Cta <?php echo $model->idCta; ?></h1>
+<h1>Actualizar Usuario Cta <?php echo $model->idCta; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
