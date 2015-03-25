@@ -104,13 +104,12 @@ public function actionCerrar($id)
 			if ($model->validate()) {
 				$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
 				if($model->Inmueble != ''){
-					//mkdir(__DIR__ .'SIHCi/sihci/users/'.$model->id_user.'/', 0777);
 					$model->Inmueble->saveAs(YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->Categoria.'.png');
 					$model->Inmueble ='/controlI/controlI/imagenes/fotos_reportes/'.$model->Categoria.'.png';
 			   			
 					if($model->save()){
 
-			   			$this->redirect(array('create','id'=>$model->idIncidente));
+			   		
 			   			$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
 			   		}
 
@@ -147,15 +146,9 @@ public function actionCerrar($id)
 			$model->ModificacionFechaHora = $fecha;
 			$model->Inmueble = CUploadedFile::getInstanceByName('Incidentes[Inmueble]');
 			if ($model->validate()) {
-				//if (!file_exists('/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/')) {
-   					//	 mkdir('/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/', 0777);
-
-   					//	$model->photo_url->saveAs(YiiBase::getPathOfAlias("webroot").'/users/'.$model->id_user.'/cve-hc/perfil.png');
-					// 	$model->photo_url ='/SIHCi/sihci/users/'.$model->id_user.'/cve-hc/perfil.png';
-					// }
+			
 				if($model->Inmueble != ''){
 					$model->Inmueble->saveAs(YiiBase::getPathOfAlias("webroot").'/imagenes/fotos_reportes/'.$model->InicioFechaHora.'.png');
-				//		$model->photo_url ='/SIHCi/sihci/users/'.$model->id_user.'.png';
 					if($model->save()){
 						$this->redirect(array('view','id'=>$model->idIncidente));
 			   		}
@@ -171,14 +164,6 @@ public function actionCerrar($id)
 			}
 			
 		}
-
-
-		/*if(isset($_POST['Incidentes']))
-		{
-			$model->attributes=$_POST['Incidentes'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->idIncidente));
-		}*/
 
 		$this->render('update',array(
 			'model'=>$model,
