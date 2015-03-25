@@ -4,11 +4,10 @@
  * This is the model class for table "cta".
  *
  * The followings are the available columns in table 'cta':
- * @property integer $idCTA
- * @property string $Nombre
+ * @property integer $idCta
  * @property string $Password
+ * @property string $Nombre
  * @property string $Jerarquia
- * @property integer $Incidentes_idIncidente
  */
 class Cta extends CActiveRecord
 {
@@ -28,12 +27,13 @@ class Cta extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idCTA, Nombre, Password, Jerarquia, Incidentes_idIncidente', 'required'),
-			array('idCTA, Incidentes_idIncidente', 'numerical', 'integerOnly'=>true),
-			array('Nombre, Password, Jerarquia', 'length', 'max'=>45),
+			array('Password', 'required'),
+			array('Password', 'length', 'max'=>100),
+			array('Nombre', 'length', 'max'=>50),
+			array('Jerarquia', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idCTA, Nombre, Password, Jerarquia, Incidentes_idIncidente', 'safe', 'on'=>'search'),
+			array('idCta, Password, Nombre, Jerarquia', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,11 +54,10 @@ class Cta extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idCTA' => 'Id Cta',
-			'Nombre' => 'Nombre',
+			'idCta' => 'Id Cta',
 			'Password' => 'Password',
+			'Nombre' => 'Nombre',
 			'Jerarquia' => 'Jerarquia',
-			'Incidentes_idIncidente' => 'Incidentes Id Incidente',
 		);
 	}
 
@@ -80,11 +79,10 @@ class Cta extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('idCTA',$this->idCTA);
-		$criteria->compare('Nombre',$this->Nombre,true);
+		$criteria->compare('idCta',$this->idCta);
 		$criteria->compare('Password',$this->Password,true);
+		$criteria->compare('Nombre',$this->Nombre,true);
 		$criteria->compare('Jerarquia',$this->Jerarquia,true);
-		$criteria->compare('Incidentes_idIncidente',$this->Incidentes_idIncidente);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
