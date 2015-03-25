@@ -2,18 +2,10 @@
 /* @var $this CtaController */
 /* @var $model Cta */
 
-<<<<<<< HEAD
-$this->menu=array(
-	array('label'=>'Usuarios CTA', 'url'=>array('index')),
-=======
-$this->breadcrumbs=array(
-	'Cta'=>array('index'),
-	'Administrar',
-);
 
 $this->menu=array(
 	array('label'=>'Listar Usuarios', 'url'=>array('index')),
->>>>>>> 39ecd1651a763f6a242cc89bbd32e22ec3ed66d8
+
 	array('label'=>'Crear Usuario', 'url'=>array('create')),
 );
 
@@ -31,10 +23,6 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<<<<<<< HEAD
-=======
-<h1>Administrar Usuarios Cta</h1>
->>>>>>> 39ecd1651a763f6a242cc89bbd32e22ec3ed66d8
 
 <h1>Administrar Usuarios</h1>
 
