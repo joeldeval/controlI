@@ -27,28 +27,28 @@
 		<?php echo $form->error($model,'Descripcion'); ?>
 
   	<?php echo $form->labelEx($model,'Categoria'); ?>
-		<?php echo $form->dropDownList($model,'Categoria',array('equipo'=>'Equipo','infraestructura'=>'Infraestructura'), 
-		                                                       array('options' => array('equipo'=>array('selected'=>true))), 
+		<?php echo $form->dropDownList($model,'Categoria',array(''=>'','equipo'=>'Esquipo','infraestructura'=>'Infraestructura'), 
+		                                                       array('options' => array(''=>array('selected'=>true))), 
 		                                                       array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'Categoria'); ?>
 
 		<?php echo $form->labelEx($model,'Laboratorio'); ?>
-		<?php echo $form->dropDownList($model,'Laboratorio',array('Lab1'=>'Laboratorio 1','Lab2'=>'Laboratorio 2',
+		<?php echo $form->dropDownList($model,'Laboratorio',array(''=>'','Lab1'=>'Laboratorio 1','Lab2'=>'Laboratorio 2',
 																  'Lab3'=>'Laboratorio 3','Lab4'=>'Laboratorio 4',
 																  'Lab5'=>'Laboratorio 5','Lab6'=>'Laboratorio 6',), 
-		                                                       array('options' => array('Lab1'=>array('selected'=>true))), 
+		                                                       array('options' => array(''=>array('selected'=>true))), 
 		                                                       array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'Laboratorio'); ?>
 
 		<?php echo $form->labelEx($model,'Urgencia'); ?>
-		<?php echo $form->dropDownList($model,'Urgencia',array('Urgente'=>'Urgente',
+		<?php echo $form->dropDownList($model,'Urgencia',array(''=>'','Urgente'=>'Urgente',
 															  'MuyAlto'=>'Muy Alto',
 															  'Alto'=>'Alto',
 															  'Normal'=>'Normal',
 															  'Bajo'=>'Bajo',
 
 																  ), 
-		                                                       array('options' => array('Urgente'=>array('selected'=>true))), 
+		                                                       array('options' => array(''=>array('selected'=>true))), 
 		                                                       array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'Urgencia'); ?>
 

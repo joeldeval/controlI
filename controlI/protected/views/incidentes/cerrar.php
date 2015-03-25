@@ -8,8 +8,7 @@ $this->menu=array(
 	array('label'=>'Regresar', 'url'=>array('view', 'id'=>$model->idIncidente)),
 );
 ?>
-<div id="form-main">
-  <div id="form-div">
+
 <h1>Cerrar Incidente <?php echo $model->idIncidente; ?></h1>
 
-<?php $this->renderPartial('_form3', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form3', array('model'=>$model)); ?> 

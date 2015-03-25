@@ -110,12 +110,21 @@ public function actionCerrar($id)
 			   			
 					if($model->save()){
 
-			   			$this->redirect(array('create','id'=>$model->idIncidente));
+			   			/*$this->redirect(array('create','id'=>$model->idIncidente));*/
 			   			$msg = "<strong class='text-success'>Ha reportado con éxito</strong>";
+			   			$model->Inmueble = '';							
+						$model->Estatus = '';
+						$model->Descripcion = '';
+						$model->Categoria = '';
+						$model->Equipo = '';
+						$model->Urgencia = '';
+						$model->Laboratorio = '';
+
 			   		}
 
 				}else{
 					$msg = "<strong class='text-error'>Debe seleccionar una Foto</strong>";
+
 				}
 
 

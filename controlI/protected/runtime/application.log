@@ -3496,3 +3496,19 @@ Stack trace:
 REQUEST_URI=/proyectogit/controlI/controlI/index.php/incidentes/delete/20?ajax=incidentes-grid
 HTTP_REFERER=http://localhost/proyectogit/controlI/controlI/index.php/incidentes/admin
 ---
+2015/03/24 16:17:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "cta"' in C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cta')
+#1 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controli/controlI/index.php/cta
+---
+2015/03/24 19:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "cta"' in C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\controlI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cta')
+#1 C:\xampp\htdocs\controlI\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\controlI\controlI\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/controli/controlI/index.php/cta
+---
