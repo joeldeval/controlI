@@ -27,7 +27,7 @@
 		<?php echo $form->error($model,'Descripcion'); ?>
 
   	<?php echo $form->labelEx($model,'Categoria'); ?>
-		<?php echo $form->dropDownList($model,'Categoria',array(''=>'','equipo'=>'Esquipo','infraestructura'=>'Infraestructura'), 
+		<?php echo $form->dropDownList($model,'Categoria',array(''=>'','equipo'=>'Equipo','infraestructura'=>'Infraestructura'), 
 		                                                       array('options' => array(''=>array('selected'=>true))), 
 		                                                       array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'Categoria'); ?>
