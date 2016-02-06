@@ -158,6 +158,7 @@ class CtaController extends Controller
 	 */
 	public function loadModel($id)
 	{
+// carga los datos del modelo
 		$model=Cta::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
