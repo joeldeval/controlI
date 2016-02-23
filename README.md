@@ -1,4 +1,4 @@
 # controlI
-control incidentes
+control incidentes para el centro universitario de tonalá
 
 Realizado en Yii framework PHP
